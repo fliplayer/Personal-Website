@@ -1,0 +1,135 @@
+#canvasouterwrapper {
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 600px;
+    height: 600px;
+}
+
+#soundStatus {
+    text-align: center;
+    font-style: sans-serif;
+}
+
+#soundwrapper {
+    margin-top: 5%;
+}
+
+#canvasinnerwrapper {
+    display: block;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+}
+
+#canvasDiv {
+	/*padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;*/
+    display: block;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+}
+
+#play {
+    position: relative;
+    top: 50%;
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+#play:hover{
+    -webkit-animation: playFun 1s infinite;
+    -moz-animation: playFun 1s infinite;
+    cursor: pointer;
+}
+
+#character {
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    width:23px;
+    height:44px;
+    top: 600px;
+    left:8px;
+   	display: block;
+    background-color: #F00;
+    z-index: -3
+}
+
+#gameover {
+    color: red;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 28px;
+}
+
+#playagain {
+/*    font-weight: bold;*/
+    font-family: sans-serif;
+}
+
+#playagain:hover {
+    -webkit-animation: againFun 1s infinite;
+    -moz-animation: againFun 1s infinite;
+    cursor: pointer;
+}
+
+@-webkit-keyframes playFun {
+    0%{font-size: 28px; color: red;}
+    25%{color:yellow;}
+    50%{font-size: 40px; color:blue;}
+    100%{font-size: 28px; color:green;}
+}
+
+@-webkit-keyframes againFun{
+    0%{font-size: 1em; color: red;}
+    25%{color:yellow;}
+    50%{font-size: 1.5em; color:blue;}
+    100%{font-size: 1em; color:green;}
+}
+
+@-moz-keyframes playFun {
+    0%{font-size: 28px; color: red;}
+    25%{color:yellow;}
+    50%{font-size: 40px; color:blue;}
+    100%{font-size: 28px; color:green;}
+}
+
+@-moz-keyframes againFun{
+    0%{font-size: 1em; color: red;}
+    25%{color:yellow;}
+    50%{font-size: 1.5em; color:blue;}
+    100%{font-size: 1em; color:green;}
+}
+
+#showscoreboard {
+     background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#showscoreboard:hover {
+    background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}

@@ -1,0 +1,77 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+    <title>Hungry Rabbit</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+    <script type="text/javascript" src="js/Boot.js"></script>
+    <script type="text/javascript" src="js/Preloader.js"></script>
+    <script type="text/javascript" src="js/MainMenu.js"></script>
+    <script type="text/javascript" src="js/Instruction.js"></script>
+    <script type="text/javascript" src="js/Instruction2.js"></script>
+    <script type="text/javascript" src="js/Instruction3.js"></script>
+    <script type="text/javascript" src="js/Instruction4.js"></script>
+    <script type="text/javascript" src="js/1stStage.js"></script>
+    <script type="text/javascript" src="js/2ndStage.js"></script>
+    <script type="text/javascript" src="js/3rdStage.js"></script>
+    <script type="text/javascript" src="js/4thStage.js"></script>
+    <script type="text/javascript" src="js/5thStage.js"></script>
+    <script type="text/javascript" src="js/6thStage.js"></script>
+    <script type="text/javascript" src="js/7thStage.js"></script>
+    <script type="text/javascript" src="js/8thStage.js"></script>
+    <script type="text/javascript" src="js/9thStage.js"></script>
+    <script type="text/javascript" src="js/10thStage.js"></script>
+    <script type="text/javascript" src="js/11thStage.js"></script>
+    <script type="text/javascript" src="js/12thStage.js"></script>
+    <script type="text/javascript" src="js/13thStage.js"></script>
+    <script type="text/javascript" src="js/14thStage.js"></script>
+    <script type="text/javascript" src="js/15thStage.js"></script>
+    <script type="text/javascript" src="js/launchStage.js"></script>
+    <script type="text/javascript" src="js/skyStage.js"></script>
+    <script type="text/javascript" src="js/outside.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+
+    <!--<script type="text/javascript" src="js/Game.js"></script>
+    <script type="text/javascript" src="js/GameOver.js"></script>-->
+</head>
+<body>
+<script>
+(function() {
+    // initialize the framework
+    var game = new Phaser.Game(960, 640, Phaser.AUTO, 'game');
+
+    // add game states
+    game.state.add('Boot', Rabbit.Boot);
+    game.state.add('Preloader', Rabbit.Preloader);
+    game.state.add('MainMenu', Rabbit.MainMenu);
+    game.state.add('Instruction', Rabbit.Instruction);
+    game.state.add('Instruction2', Rabbit.Instruction2);
+    game.state.add('Instruction3', Rabbit.Instruction3);
+    game.state.add('Instruction4', Rabbit.Instruction4);
+    game.state.add('firstStage', Rabbit.firstStage);
+    game.state.add('secondStage', Rabbit.secondStage);
+    game.state.add('thirdStage', Rabbit.thirdStage);
+    game.state.add('fourthStage', Rabbit.fourthStage);
+    game.state.add('fifthStage', Rabbit.fifthStage);
+    game.state.add('sixthStage', Rabbit.sixthStage);
+    game.state.add('seventhStage', Rabbit.seventhStage);
+    game.state.add('eighthStage', Rabbit.eighthStage);
+    game.state.add('ninthStage', Rabbit.ninthStage);
+    game.state.add('tenthStage', Rabbit.tenthStage);
+    game.state.add('eleventhStage', Rabbit.eleventhStage);
+    game.state.add('twelfthStage', Rabbit.twelfthStage);
+    game.state.add('thirteenthStage', Rabbit.thirteenthStage);
+    game.state.add('fourteenthStage', Rabbit.fourteenthStage);
+    game.state.add('fifteenthStage', Rabbit.fifteenthStage);
+    game.state.add('launchStage', Rabbit.launchStage);
+    game.state.add('sky', Rabbit.sky);
+    game.state.add('outside', Rabbit.outside);
+    game.state.add('home', Rabbit.home);
+    // start the Boot state
+    game.state.start('Boot');
+})();
+</script>
+
+</body>
+</html>
